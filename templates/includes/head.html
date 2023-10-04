@@ -1,12 +1,32 @@
 {% load static %} 
-<div class="row mb-2" id="encabezado">
-    <div class="col-8" id="titulo">
-        <h1>SERPREFUN DE COLOMBIA</h1>
-        <div class="col-12" id="nombreUsuario"> 
-            {% if user.id is None %} 
-                <h6>visitante</h6> 
-            {% else %} <h6>{{
-                user.first_name }} - {{ user.rol }}</h6> {% endif %} </div>
-    </div>
-    <div class="col-4"> <img class="d-block mx-auto" src="{% static 'img/supermarket.png' %}" alt=""> </div>
-</div>
+<head>
+    <meta charset="utf-8">
+    <title>Funeraria SERPREFUN DE COLOMBIA</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicon -->
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Hoja de estilo de fuente de icono -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Hoja de estilo de bibliotecas -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Hoja de estilo de Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
